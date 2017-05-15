@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0970AA891EC99A3200404D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA881EC99A3200404D54 /* main.m */; };
+		0970AA8C1EC99A3200404D54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA8B1EC99A3200404D54 /* AppDelegate.m */; };
+		0970AA8F1EC99A3200404D54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA8E1EC99A3200404D54 /* ViewController.m */; };
+		0970AA921EC99A3200404D54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970AA901EC99A3200404D54 /* Main.storyboard */; };
+		0970AA941EC99A3200404D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0970AA931EC99A3200404D54 /* Assets.xcassets */; };
+		0970AA971EC99A3200404D54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970AA951EC99A3200404D54 /* LaunchScreen.storyboard */; };
+		0970AAA21EC99A3200404D54 /* FHGoogleiOSClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AAA11EC99A3200404D54 /* FHGoogleiOSClientTests.m */; };
+		0970AAAD1EC99A3200404D54 /* FHGoogleiOSClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AAAC1EC99A3200404D54 /* FHGoogleiOSClientUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0970AA9E1EC99A3200404D54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0970AA7C1EC99A3200404D54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0970AA831EC99A3200404D54;
+			remoteInfo = FHGoogleiOSClient;
+		};
+		0970AAA91EC99A3200404D54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0970AA7C1EC99A3200404D54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0970AA831EC99A3200404D54;
+			remoteInfo = FHGoogleiOSClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0970AA841EC99A3200404D54 /* FHGoogleiOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHGoogleiOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0970AA881EC99A3200404D54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0970AA8A1EC99A3200404D54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0970AA8B1EC99A3200404D54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0970AA8D1EC99A3200404D54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0970AA8E1EC99A3200404D54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0970AA911EC99A3200404D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0970AA931EC99A3200404D54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0970AA961EC99A3200404D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0970AA981EC99A3200404D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0970AA9D1EC99A3200404D54 /* FHGoogleiOSClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FHGoogleiOSClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0970AAA11EC99A3200404D54 /* FHGoogleiOSClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FHGoogleiOSClientTests.m; sourceTree = "<group>"; };
+		0970AAA31EC99A3200404D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0970AAA81EC99A3200404D54 /* FHGoogleiOSClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FHGoogleiOSClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0970AAAC1EC99A3200404D54 /* FHGoogleiOSClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FHGoogleiOSClientUITests.m; sourceTree = "<group>"; };
+		0970AAAE1EC99A3200404D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0970AA811EC99A3200404D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0970AA9A1EC99A3200404D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0970AAA51EC99A3200404D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0970AA7B1EC99A3200404D54 = {
+			isa = PBXGroup;
+			children = (
+				0970AA861EC99A3200404D54 /* FHGoogleiOSClient */,
+				0970AAA01EC99A3200404D54 /* FHGoogleiOSClientTests */,
+				0970AAAB1EC99A3200404D54 /* FHGoogleiOSClientUITests */,
+				0970AA851EC99A3200404D54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0970AA851EC99A3200404D54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0970AA841EC99A3200404D54 /* FHGoogleiOSClient.app */,
+				0970AA9D1EC99A3200404D54 /* FHGoogleiOSClientTests.xctest */,
+				0970AAA81EC99A3200404D54 /* FHGoogleiOSClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0970AA861EC99A3200404D54 /* FHGoogleiOSClient */ = {
+			isa = PBXGroup;
+			children = (
+				0970AA8A1EC99A3200404D54 /* AppDelegate.h */,
+				0970AA8B1EC99A3200404D54 /* AppDelegate.m */,
+				0970AA8D1EC99A3200404D54 /* ViewController.h */,
+				0970AA8E1EC99A3200404D54 /* ViewController.m */,
+				0970AA901EC99A3200404D54 /* Main.storyboard */,
+				0970AA931EC99A3200404D54 /* Assets.xcassets */,
+				0970AA951EC99A3200404D54 /* LaunchScreen.storyboard */,
+				0970AA981EC99A3200404D54 /* Info.plist */,
+				0970AA871EC99A3200404D54 /* Supporting Files */,
+			);
+			path = FHGoogleiOSClient;
+			sourceTree = "<group>";
+		};
+		0970AA871EC99A3200404D54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0970AA881EC99A3200404D54 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0970AAA01EC99A3200404D54 /* FHGoogleiOSClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				0970AAA11EC99A3200404D54 /* FHGoogleiOSClientTests.m */,
+				0970AAA31EC99A3200404D54 /* Info.plist */,
+			);
+			path = FHGoogleiOSClientTests;
+			sourceTree = "<group>";
+		};
+		0970AAAB1EC99A3200404D54 /* FHGoogleiOSClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0970AAAC1EC99A3200404D54 /* FHGoogleiOSClientUITests.m */,
+				0970AAAE1EC99A3200404D54 /* Info.plist */,
+			);
+			path = FHGoogleiOSClientUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0970AA831EC99A3200404D54 /* FHGoogleiOSClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0970AAB11EC99A3200404D54 /* Build configuration list for PBXNativeTarget "FHGoogleiOSClient" */;
+			buildPhases = (
+				0970AA801EC99A3200404D54 /* Sources */,
+				0970AA811EC99A3200404D54 /* Frameworks */,
+				0970AA821EC99A3200404D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FHGoogleiOSClient;
+			productName = FHGoogleiOSClient;
+			productReference = 0970AA841EC99A3200404D54 /* FHGoogleiOSClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0970AA9C1EC99A3200404D54 /* FHGoogleiOSClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0970AAB41EC99A3200404D54 /* Build configuration list for PBXNativeTarget "FHGoogleiOSClientTests" */;
+			buildPhases = (
+				0970AA991EC99A3200404D54 /* Sources */,
+				0970AA9A1EC99A3200404D54 /* Frameworks */,
+				0970AA9B1EC99A3200404D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0970AA9F1EC99A3200404D54 /* PBXTargetDependency */,
+			);
+			name = FHGoogleiOSClientTests;
+			productName = FHGoogleiOSClientTests;
+			productReference = 0970AA9D1EC99A3200404D54 /* FHGoogleiOSClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0970AAA71EC99A3200404D54 /* FHGoogleiOSClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0970AAB71EC99A3200404D54 /* Build configuration list for PBXNativeTarget "FHGoogleiOSClientUITests" */;
+			buildPhases = (
+				0970AAA41EC99A3200404D54 /* Sources */,
+				0970AAA51EC99A3200404D54 /* Frameworks */,
+				0970AAA61EC99A3200404D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0970AAAA1EC99A3200404D54 /* PBXTargetDependency */,
+			);
+			name = FHGoogleiOSClientUITests;
+			productName = FHGoogleiOSClientUITests;
+			productReference = 0970AAA81EC99A3200404D54 /* FHGoogleiOSClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0970AA7C1EC99A3200404D54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MADAO;
+				TargetAttributes = {
+					0970AA831EC99A3200404D54 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = H3MEX3W3VV;
+						ProvisioningStyle = Automatic;
+					};
+					0970AA9C1EC99A3200404D54 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = H3MEX3W3VV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0970AA831EC99A3200404D54;
+					};
+					0970AAA71EC99A3200404D54 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = H3MEX3W3VV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0970AA831EC99A3200404D54;
+					};
+				};
+			};
+			buildConfigurationList = 0970AA7F1EC99A3200404D54 /* Build configuration list for PBXProject "FHGoogleiOSClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0970AA7B1EC99A3200404D54;
+			productRefGroup = 0970AA851EC99A3200404D54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0970AA831EC99A3200404D54 /* FHGoogleiOSClient */,
+				0970AA9C1EC99A3200404D54 /* FHGoogleiOSClientTests */,
+				0970AAA71EC99A3200404D54 /* FHGoogleiOSClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0970AA821EC99A3200404D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0970AA971EC99A3200404D54 /* LaunchScreen.storyboard in Resources */,
+				0970AA941EC99A3200404D54 /* Assets.xcassets in Resources */,
+				0970AA921EC99A3200404D54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0970AA9B1EC99A3200404D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0970AAA61EC99A3200404D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0970AA801EC99A3200404D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0970AA8F1EC99A3200404D54 /* ViewController.m in Sources */,
+				0970AA8C1EC99A3200404D54 /* AppDelegate.m in Sources */,
+				0970AA891EC99A3200404D54 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0970AA991EC99A3200404D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0970AAA21EC99A3200404D54 /* FHGoogleiOSClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0970AAA41EC99A3200404D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0970AAAD1EC99A3200404D54 /* FHGoogleiOSClientUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0970AA9F1EC99A3200404D54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0970AA831EC99A3200404D54 /* FHGoogleiOSClient */;
+			targetProxy = 0970AA9E1EC99A3200404D54 /* PBXContainerItemProxy */;
+		};
+		0970AAAA1EC99A3200404D54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0970AA831EC99A3200404D54 /* FHGoogleiOSClient */;
+			targetProxy = 0970AAA91EC99A3200404D54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0970AA901EC99A3200404D54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0970AA911EC99A3200404D54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0970AA951EC99A3200404D54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0970AA961EC99A3200404D54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0970AAAF1EC99A3200404D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0970AAB01EC99A3200404D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0970AAB21EC99A3200404D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				INFOPLIST_FILE = FHGoogleiOSClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0970AAB31EC99A3200404D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				INFOPLIST_FILE = FHGoogleiOSClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0970AAB51EC99A3200404D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				INFOPLIST_FILE = FHGoogleiOSClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FHGoogleiOSClient.app/FHGoogleiOSClient";
+			};
+			name = Debug;
+		};
+		0970AAB61EC99A3200404D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				INFOPLIST_FILE = FHGoogleiOSClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FHGoogleiOSClient.app/FHGoogleiOSClient";
+			};
+			name = Release;
+		};
+		0970AAB81EC99A3200404D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				INFOPLIST_FILE = FHGoogleiOSClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FHGoogleiOSClient;
+			};
+			name = Debug;
+		};
+		0970AAB91EC99A3200404D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				INFOPLIST_FILE = FHGoogleiOSClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FHGoogleiOSClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0970AA7F1EC99A3200404D54 /* Build configuration list for PBXProject "FHGoogleiOSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0970AAAF1EC99A3200404D54 /* Debug */,
+				0970AAB01EC99A3200404D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0970AAB11EC99A3200404D54 /* Build configuration list for PBXNativeTarget "FHGoogleiOSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0970AAB21EC99A3200404D54 /* Debug */,
+				0970AAB31EC99A3200404D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0970AAB41EC99A3200404D54 /* Build configuration list for PBXNativeTarget "FHGoogleiOSClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0970AAB51EC99A3200404D54 /* Debug */,
+				0970AAB61EC99A3200404D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0970AAB71EC99A3200404D54 /* Build configuration list for PBXNativeTarget "FHGoogleiOSClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0970AAB81EC99A3200404D54 /* Debug */,
+				0970AAB91EC99A3200404D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0970AA7C1EC99A3200404D54 /* Project object */;
+}
