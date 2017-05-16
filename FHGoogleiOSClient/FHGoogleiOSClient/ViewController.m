@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import <Google/SignIn.h>
+
+@interface ViewController ()<GIDSignInUIDelegate>
 
 @end
 
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [GIDSignIn sharedInstance].uiDelegate = self;
+    
+    //Config sign in button
+    GIDSignInButton *signButton = [[GIDSignInButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [self.view addSubview:signButton];
+    signButton.center = self.view.center;
 }
 
 
