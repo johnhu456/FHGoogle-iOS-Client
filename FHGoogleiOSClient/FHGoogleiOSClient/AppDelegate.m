@@ -7,9 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
 #import <Google/SignIn.h>
 
 @interface AppDelegate ()<GIDSignInDelegate>
+
+@property (nonatomic, strong) ViewController *checkLoginVC;
 
 @end
 
@@ -22,6 +26,12 @@
     NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
     
     [GIDSignIn sharedInstance].delegate = self;
+    
+    self.checkLoginVC = [[ViewController alloc] init];
+    UINavigationController *googleClientNavi = [[UINavigationController alloc] initWithRootViewController:self.checkLoginVC];
+    self.window =  [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = googleClientNavi;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -45,7 +55,18 @@ didSignInForUser:(GIDGoogleUser *)user
     NSString *givenName = user.profile.givenName;
     NSString *familyName = user.profile.familyName;
     NSString *email = user.profile.email;
+    if (self.checkLoginVC)
+    {
+        [self.checkLoginVC displayAccountVC];
+    }
     // ...
+}
+
+- (void)signIn:(GIDSignIn *)signIn
+        didDisconnectWithUser:(GIDGoogleUser *)user
+     withError:(NSError *)error
+{
+    NSLog(@"logged out");
 }
 
 @end
