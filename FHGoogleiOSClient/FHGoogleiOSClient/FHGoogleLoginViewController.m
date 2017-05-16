@@ -21,18 +21,6 @@
     
     [self setupNavigationItem];
     [self setupUserInterface];
-
-    
-//    //Config logout button
-//    UIButton *logOutButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//    logOutButton.frame = CGRectMake(0, 0, 100, 50);
-//    logOutButton.layer.cornerRadius = 3.f;
-//    logOutButton.layer.masksToBounds = YES;
-//    logOutButton.center = CGPointMake(signButton.center.x, signButton.center.y + 65.f);
-//    [logOutButton setBackgroundColor:[UIColor colorWithRed:1.f green:51/255.f blue:0.f alpha:1]];
-//    [logOutButton setTitle:@"Log out" forState:UIControlStateNormal];
-//    [logOutButton addTarget:self action:@selector(handleLogoutButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:logOutButton];
 }
 
 - (void)setupNavigationItem {
@@ -41,17 +29,26 @@
 
 - (void)setupUserInterface {
     [GIDSignIn sharedInstance].uiDelegate = self;
-    NSString *driveScope = @"https://www.googleapis.com/auth/drive.readonly";
-    NSArray *currentScopes = [GIDSignIn sharedInstance].scopes;
-    [GIDSignIn sharedInstance].scopes = [currentScopes arrayByAddingObject:driveScope];
-    
     //Config sign in button
-    GIDSignInButton *signButton = [[GIDSignInButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    UIButton *signButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [signButton setTitle:@"Sign" forState:UIControlStateNormal];
+    [signButton setBackgroundColor:[UIColor colorWithRed:1.f green:51/255.f blue:0.f alpha:1]];
     [self.view addSubview:signButton];
     signButton.center = self.view.center;
+    [signButton addTarget:self action:@selector(handleSignButtonOnClicked:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark - WidgetsActions
+
+- (void)handleSignButtonOnClicked:(UIButton *)sender {
+    if ([[GIDSignIn sharedInstance] hasAuthInKeychain]) {
+        
+    }
+    else {
+        [[GIDSignIn sharedInstance] signIn];
+    }
+
+}
 
 - (void)handleCancelButtonOnClicked:(UIBarButtonItem *)sender {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];

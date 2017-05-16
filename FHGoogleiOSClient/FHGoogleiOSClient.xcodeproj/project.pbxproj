@@ -18,6 +18,8 @@
 		0970AAAD1EC99A3200404D54 /* FHGoogleiOSClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AAAC1EC99A3200404D54 /* FHGoogleiOSClientUITests.m */; };
 		0970AACA1EC9A36C00404D54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0970AAC91EC9A36C00404D54 /* GoogleService-Info.plist */; };
 		0970AAE61ECAC1E600404D54 /* FHGoogleLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AAE51ECAC1E600404D54 /* FHGoogleLoginViewController.m */; };
+		0970AAE91ECACB1400404D54 /* FHGoogleAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AAE81ECACB1400404D54 /* FHGoogleAccountViewController.m */; };
+		0970AAED1ECAD14200404D54 /* FHGoogleDriveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AAEC1ECAD14200404D54 /* FHGoogleDriveViewController.m */; };
 		9AD2F9DF47F1BDF2EBC4DAAB /* libPods-FHGoogleiOSClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82579A5842F54CDC188F4A9A /* libPods-FHGoogleiOSClientTests.a */; };
 		E7AF538094EBC102543EDB9D /* libPods-FHGoogleiOSClientUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD02274A93607A8FA9159C4B /* libPods-FHGoogleiOSClientUITests.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,10 @@
 		0970AAC91EC9A36C00404D54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0970AAE41ECAC1E600404D54 /* FHGoogleLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHGoogleLoginViewController.h; sourceTree = "<group>"; };
 		0970AAE51ECAC1E600404D54 /* FHGoogleLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHGoogleLoginViewController.m; sourceTree = "<group>"; };
+		0970AAE71ECACB1400404D54 /* FHGoogleAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHGoogleAccountViewController.h; sourceTree = "<group>"; };
+		0970AAE81ECACB1400404D54 /* FHGoogleAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHGoogleAccountViewController.m; sourceTree = "<group>"; };
+		0970AAEB1ECAD14200404D54 /* FHGoogleDriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHGoogleDriveViewController.h; path = "Google Service/FHGoogleDriveViewController.h"; sourceTree = "<group>"; };
+		0970AAEC1ECAD14200404D54 /* FHGoogleDriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHGoogleDriveViewController.m; path = "Google Service/FHGoogleDriveViewController.m"; sourceTree = "<group>"; };
 		126C4E086F90EF2CB1134473 /* Pods-FHGoogleiOSClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHGoogleiOSClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FHGoogleiOSClientUITests/Pods-FHGoogleiOSClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		591C9CB66F571DE2A271A3A5 /* Pods-FHGoogleiOSClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHGoogleiOSClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FHGoogleiOSClientTests/Pods-FHGoogleiOSClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C75F5713A74BDD9D01A78F0 /* Pods-FHGoogleiOSClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHGoogleiOSClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FHGoogleiOSClientTests/Pods-FHGoogleiOSClientTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,10 +129,13 @@
 		0970AA861EC99A3200404D54 /* FHGoogleiOSClient */ = {
 			isa = PBXGroup;
 			children = (
+				0970AAEA1ECAD12200404D54 /* GoogleService */,
 				0970AA8A1EC99A3200404D54 /* AppDelegate.h */,
 				0970AA8B1EC99A3200404D54 /* AppDelegate.m */,
 				0970AA8D1EC99A3200404D54 /* ViewController.h */,
 				0970AA8E1EC99A3200404D54 /* ViewController.m */,
+				0970AAE71ECACB1400404D54 /* FHGoogleAccountViewController.h */,
+				0970AAE81ECACB1400404D54 /* FHGoogleAccountViewController.m */,
 				0970AAE41ECAC1E600404D54 /* FHGoogleLoginViewController.h */,
 				0970AAE51ECAC1E600404D54 /* FHGoogleLoginViewController.m */,
 				0970AA901EC99A3200404D54 /* Main.storyboard */,
@@ -163,6 +172,15 @@
 				0970AAAE1EC99A3200404D54 /* Info.plist */,
 			);
 			path = FHGoogleiOSClientUITests;
+			sourceTree = "<group>";
+		};
+		0970AAEA1ECAD12200404D54 /* GoogleService */ = {
+			isa = PBXGroup;
+			children = (
+				0970AAEB1ECAD14200404D54 /* FHGoogleDriveViewController.h */,
+				0970AAEC1ECAD14200404D54 /* FHGoogleDriveViewController.m */,
+			);
+			name = GoogleService;
 			sourceTree = "<group>";
 		};
 		0E3A128FC90B8D0CAD5C3A66 /* Pods */ = {
@@ -475,6 +493,8 @@
 				0970AA8F1EC99A3200404D54 /* ViewController.m in Sources */,
 				0970AA8C1EC99A3200404D54 /* AppDelegate.m in Sources */,
 				0970AA891EC99A3200404D54 /* main.m in Sources */,
+				0970AAE91ECACB1400404D54 /* FHGoogleAccountViewController.m in Sources */,
+				0970AAED1ECAD14200404D54 /* FHGoogleDriveViewController.m in Sources */,
 				0970AAE61ECAC1E600404D54 /* FHGoogleLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
