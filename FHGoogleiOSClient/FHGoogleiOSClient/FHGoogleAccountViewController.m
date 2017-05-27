@@ -53,6 +53,7 @@ static NSString *const kNormalCellReuseIdentifier = @"kNormalCellReuseIdentifier
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:kNormalCellReuseIdentifier];
     tableViewCell.textLabel.text = @"Drive";
+    tableViewCell.imageView.image = [UIImage imageNamed:@"drive"];
     return tableViewCell;
 }
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		08D975E3A31C536BC848EAD8 /* libPods-FHGoogleiOSClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80BBADAAE168112AE79D70 /* libPods-FHGoogleiOSClient.a */; };
 		092F2D791ED9270D00BB84D7 /* FHGoogleLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 092F2D781ED9270D00BB84D7 /* FHGoogleLoginManager.m */; };
+		092F2E161ED975CF00BB84D7 /* FHGoogleDriveFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 092F2E141ED975CF00BB84D7 /* FHGoogleDriveFileCell.m */; };
+		092F2E171ED975CF00BB84D7 /* FHGoogleDriveFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092F2E151ED975CF00BB84D7 /* FHGoogleDriveFileCell.xib */; };
 		0970AA891EC99A3200404D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA881EC99A3200404D54 /* main.m */; };
 		0970AA8C1EC99A3200404D54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA8B1EC99A3200404D54 /* AppDelegate.m */; };
 		0970AA8F1EC99A3200404D54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA8E1EC99A3200404D54 /* ViewController.m */; };
@@ -48,6 +50,9 @@
 		092F2DC31ED959B800BB84D7 /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleToolboxForMac.a; path = "../../../../Library/Developer/Xcode/DerivedData/FHGoogleiOSClient-bnxmqomrtfnpskbwmfrvidazwcaw/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/libGoogleToolboxForMac.a"; sourceTree = "<group>"; };
 		092F2DC61ED95A4300BB84D7 /* libGTMOAuth2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMOAuth2.a; path = "../../../../Library/Developer/Xcode/DerivedData/FHGoogleiOSClient-bnxmqomrtfnpskbwmfrvidazwcaw/Build/Products/Debug-iphonesimulator/GTMOAuth2/libGTMOAuth2.a"; sourceTree = "<group>"; };
 		092F2DC81ED95A4700BB84D7 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "../../../../Library/Developer/Xcode/DerivedData/FHGoogleiOSClient-bnxmqomrtfnpskbwmfrvidazwcaw/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
+		092F2E131ED975CF00BB84D7 /* FHGoogleDriveFileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHGoogleDriveFileCell.h; path = "Google Service/FHGoogleDriveFileCell.h"; sourceTree = "<group>"; };
+		092F2E141ED975CF00BB84D7 /* FHGoogleDriveFileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHGoogleDriveFileCell.m; path = "Google Service/FHGoogleDriveFileCell.m"; sourceTree = "<group>"; };
+		092F2E151ED975CF00BB84D7 /* FHGoogleDriveFileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FHGoogleDriveFileCell.xib; path = "Google Service/FHGoogleDriveFileCell.xib"; sourceTree = "<group>"; };
 		0970AA841EC99A3200404D54 /* FHGoogleiOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHGoogleiOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0970AA881EC99A3200404D54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0970AA8A1EC99A3200404D54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +122,18 @@
 				092F2D781ED9270D00BB84D7 /* FHGoogleLoginManager.m */,
 			);
 			name = GoogleLoginManager;
+			sourceTree = "<group>";
+		};
+		092F2E121ED975A400BB84D7 /* Drive */ = {
+			isa = PBXGroup;
+			children = (
+				0970AAEB1ECAD14200404D54 /* FHGoogleDriveViewController.h */,
+				0970AAEC1ECAD14200404D54 /* FHGoogleDriveViewController.m */,
+				092F2E131ED975CF00BB84D7 /* FHGoogleDriveFileCell.h */,
+				092F2E141ED975CF00BB84D7 /* FHGoogleDriveFileCell.m */,
+				092F2E151ED975CF00BB84D7 /* FHGoogleDriveFileCell.xib */,
+			);
+			name = Drive;
 			sourceTree = "<group>";
 		};
 		0970AA7B1EC99A3200404D54 = {
@@ -193,8 +210,7 @@
 		0970AAEA1ECAD12200404D54 /* GoogleService */ = {
 			isa = PBXGroup;
 			children = (
-				0970AAEB1ECAD14200404D54 /* FHGoogleDriveViewController.h */,
-				0970AAEC1ECAD14200404D54 /* FHGoogleDriveViewController.m */,
+				092F2E121ED975A400BB84D7 /* Drive */,
 			);
 			name = GoogleService;
 			sourceTree = "<group>";
@@ -346,6 +362,7 @@
 				0970AA971EC99A3200404D54 /* LaunchScreen.storyboard in Resources */,
 				0970AACA1EC9A36C00404D54 /* GoogleService-Info.plist in Resources */,
 				0970AA941EC99A3200404D54 /* Assets.xcassets in Resources */,
+				092F2E171ED975CF00BB84D7 /* FHGoogleDriveFileCell.xib in Resources */,
 				0970AA921EC99A3200404D54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +533,7 @@
 				0970AAE91ECACB1400404D54 /* FHGoogleAccountViewController.m in Sources */,
 				0970AAED1ECAD14200404D54 /* FHGoogleDriveViewController.m in Sources */,
 				0970AAE61ECAC1E600404D54 /* FHGoogleLoginViewController.m in Sources */,
+				092F2E161ED975CF00BB84D7 /* FHGoogleDriveFileCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
