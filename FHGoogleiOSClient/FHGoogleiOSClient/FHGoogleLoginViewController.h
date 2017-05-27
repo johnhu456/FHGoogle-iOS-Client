@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface FHGoogleLoginViewController : UIViewController
+
+@property (nonatomic, weak) ViewController *rootViewController;
 
 @end

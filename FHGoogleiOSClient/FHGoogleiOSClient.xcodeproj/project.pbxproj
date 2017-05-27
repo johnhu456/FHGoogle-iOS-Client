@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08D975E3A31C536BC848EAD8 /* libPods-FHGoogleiOSClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80BBADAAE168112AE79D70 /* libPods-FHGoogleiOSClient.a */; };
+		092F2D791ED9270D00BB84D7 /* FHGoogleLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 092F2D781ED9270D00BB84D7 /* FHGoogleLoginManager.m */; };
 		0970AA891EC99A3200404D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA881EC99A3200404D54 /* main.m */; };
 		0970AA8C1EC99A3200404D54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA8B1EC99A3200404D54 /* AppDelegate.m */; };
 		0970AA8F1EC99A3200404D54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0970AA8E1EC99A3200404D54 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092F2D771ED9270D00BB84D7 /* FHGoogleLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHGoogleLoginManager.h; path = GoogleLoginManager/FHGoogleLoginManager.h; sourceTree = "<group>"; };
+		092F2D781ED9270D00BB84D7 /* FHGoogleLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHGoogleLoginManager.m; path = GoogleLoginManager/FHGoogleLoginManager.m; sourceTree = "<group>"; };
 		0970AA841EC99A3200404D54 /* FHGoogleiOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHGoogleiOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0970AA881EC99A3200404D54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0970AA8A1EC99A3200404D54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092F2D761ED926DF00BB84D7 /* GoogleLoginManager */ = {
+			isa = PBXGroup;
+			children = (
+				092F2D771ED9270D00BB84D7 /* FHGoogleLoginManager.h */,
+				092F2D781ED9270D00BB84D7 /* FHGoogleLoginManager.m */,
+			);
+			name = GoogleLoginManager;
+			sourceTree = "<group>";
+		};
 		0970AA7B1EC99A3200404D54 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 		0970AA861EC99A3200404D54 /* FHGoogleiOSClient */ = {
 			isa = PBXGroup;
 			children = (
+				092F2D761ED926DF00BB84D7 /* GoogleLoginManager */,
 				0970AAEA1ECAD12200404D54 /* GoogleService */,
 				0970AA8A1EC99A3200404D54 /* AppDelegate.h */,
 				0970AA8B1EC99A3200404D54 /* AppDelegate.m */,
@@ -492,6 +505,7 @@
 			files = (
 				0970AA8F1EC99A3200404D54 /* ViewController.m in Sources */,
 				0970AA8C1EC99A3200404D54 /* AppDelegate.m in Sources */,
+				092F2D791ED9270D00BB84D7 /* FHGoogleLoginManager.m in Sources */,
 				0970AA891EC99A3200404D54 /* main.m in Sources */,
 				0970AAE91ECACB1400404D54 /* FHGoogleAccountViewController.m in Sources */,
 				0970AAED1ECAD14200404D54 /* FHGoogleDriveViewController.m in Sources */,

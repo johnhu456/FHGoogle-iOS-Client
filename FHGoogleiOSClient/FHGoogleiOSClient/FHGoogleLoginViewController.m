@@ -7,7 +7,7 @@
 //
 
 #import "FHGoogleLoginViewController.h"
-#import <Google/SignIn.h>
+#import "FHGoogleLoginManager.h"
 
 @interface FHGoogleLoginViewController ()<GIDSignInUIDelegate>
 
@@ -41,13 +41,17 @@
 #pragma mark - WidgetsActions
 
 - (void)handleSignButtonOnClicked:(UIButton *)sender {
-    if ([[GIDSignIn sharedInstance] hasAuthInKeychain]) {
-        
-    }
-    else {
-        [[GIDSignIn sharedInstance] signIn];
-    }
-
+    __weak typeof(self) weakSelf = self;
+    [[FHGoogleLoginManager sharedInstance] startGoogleLoginWithCompletion:^(GIDGoogleUser *user, NSError *error) {
+        if (error == nil && user)
+        {
+            [weakSelf.rootViewController displayAccountVC];
+        }
+        else
+        {
+            //Handle error
+        }
+    }];
 }
 
 - (void)handleCancelButtonOnClicked:(UIBarButtonItem *)sender {

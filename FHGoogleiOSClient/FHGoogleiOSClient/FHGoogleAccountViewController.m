@@ -66,6 +66,7 @@ static NSString *const kNormalCellReuseIdentifier = @"kNormalCellReuseIdentifier
 - (void)handleLogoutButtonOnClicked:(UIBarButtonItem *)sender {
     [[GIDSignIn sharedInstance] signOut];
     [[GIDSignIn sharedInstance] disconnect];
+    [self.rootViewController checkGoogleLoginState];
 }
 
 - (void)didReceiveMemoryWarning {

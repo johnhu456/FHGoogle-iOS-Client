@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+
+#import "FHGoogleLoginManager.h"
+
 #import "FHGoogleLoginViewController.h"
 #import "FHGoogleAccountViewController.h"
-
-#import <Google/SignIn.h>
 
 @interface ViewController ()<GIDSignInUIDelegate>
 
@@ -39,26 +40,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [GIDSignIn sharedInstance].uiDelegate = self;
-    NSString *driveScope = @"https://www.googleapis.com/auth/drive.readonly";
-    NSArray *currentScopes = [GIDSignIn sharedInstance].scopes;
-    [GIDSignIn sharedInstance].scopes = [currentScopes arrayByAddingObject:driveScope];
-    
     [self checkGoogleLoginState];
 }
 
 - (void)checkGoogleLoginState {
     self.activityIndicator.hidden = NO;
-    if ([GIDSignIn sharedInstance].currentUser) {
-        [self displayAccountVC];
-    }
-    else if ([[GIDSignIn sharedInstance] hasAuthInKeychain]) {
-        [[GIDSignIn sharedInstance] signInSilently];
-    }
-    else {
-        //
-        [self configLoginVC];
-    }
+    __weak typeof(self) weakSelf = self;
+    [self.presentedViewController dismissViewControllerAnimated:NO completion:nil];
+    [[FHGoogleLoginManager sharedInstance] checkGoogleAccountStateWithCompletion:^(FHGoogleAccountState state) {
+        switch (state) {
+            case FHGoogleAccountStateOnline:
+                [self displayAccountVC];
+                break;
+            case FHGoogleAccountStateHasKeyChain:
+                {
+                    [[FHGoogleLoginManager sharedInstance] autoLoginWithCompletion:^(GIDGoogleUser *user, NSError *error) {
+                        [weakSelf displayAccountVC];
+                    }];
+                }
+                break;
+            case FHGoogleAccountStateOffline:
+                [self displayLoginVC];
+                break;
+            default:
+                break;
+        }
+    }];
 }
 
 #pragma mark - UserInterface
@@ -69,21 +76,17 @@
         [self.loginVCNavi dismissViewControllerAnimated:YES completion:nil];
     }
     FHGoogleAccountViewController *googleAccountVC = [[FHGoogleAccountViewController alloc] init];
+    googleAccountVC.rootViewController = self;
     self.accountVCNavi = [[UINavigationController alloc] initWithRootViewController:googleAccountVC];
     [self presentViewController:self.accountVCNavi animated:YES completion:nil];
 }
 
-- (void)configLoginVC {
+- (void)displayLoginVC {
     self.activityIndicator.hidden = YES;
     FHGoogleLoginViewController *googleLoginVC = [[FHGoogleLoginViewController alloc] init];
+    googleLoginVC.rootViewController = self;
     self.loginVCNavi = [[UINavigationController alloc] initWithRootViewController:googleLoginVC];
     [self presentViewController:self.loginVCNavi animated:YES completion:nil];
-}
-
-
-- (void)handleLogoutButtonClicked:(UIButton *)sender {
-    [[GIDSignIn sharedInstance] signOut];
-    [[GIDSignIn sharedInstance] disconnect];
 }
 
 @end
