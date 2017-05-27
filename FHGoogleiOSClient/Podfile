@@ -3,6 +3,7 @@
 
 target 'FHGoogleiOSClient' do
   pod 'Google/SignIn'
+  pod 'GoogleAPIClientForREST/Drive'
 
   # Pods for FHGoogleiOSClient
 

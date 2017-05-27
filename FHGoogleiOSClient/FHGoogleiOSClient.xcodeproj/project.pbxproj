@@ -45,6 +45,9 @@
 /* Begin PBXFileReference section */
 		092F2D771ED9270D00BB84D7 /* FHGoogleLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHGoogleLoginManager.h; path = GoogleLoginManager/FHGoogleLoginManager.h; sourceTree = "<group>"; };
 		092F2D781ED9270D00BB84D7 /* FHGoogleLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHGoogleLoginManager.m; path = GoogleLoginManager/FHGoogleLoginManager.m; sourceTree = "<group>"; };
+		092F2DC31ED959B800BB84D7 /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleToolboxForMac.a; path = "../../../../Library/Developer/Xcode/DerivedData/FHGoogleiOSClient-bnxmqomrtfnpskbwmfrvidazwcaw/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/libGoogleToolboxForMac.a"; sourceTree = "<group>"; };
+		092F2DC61ED95A4300BB84D7 /* libGTMOAuth2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMOAuth2.a; path = "../../../../Library/Developer/Xcode/DerivedData/FHGoogleiOSClient-bnxmqomrtfnpskbwmfrvidazwcaw/Build/Products/Debug-iphonesimulator/GTMOAuth2/libGTMOAuth2.a"; sourceTree = "<group>"; };
+		092F2DC81ED95A4700BB84D7 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTMSessionFetcher.a; path = "../../../../Library/Developer/Xcode/DerivedData/FHGoogleiOSClient-bnxmqomrtfnpskbwmfrvidazwcaw/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/libGTMSessionFetcher.a"; sourceTree = "<group>"; };
 		0970AA841EC99A3200404D54 /* FHGoogleiOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHGoogleiOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0970AA881EC99A3200404D54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0970AA8A1EC99A3200404D54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -212,6 +215,9 @@
 		86AB3BBD723CF3636E65FC10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				092F2DC81ED95A4700BB84D7 /* libGTMSessionFetcher.a */,
+				092F2DC61ED95A4300BB84D7 /* libGTMOAuth2.a */,
+				092F2DC31ED959B800BB84D7 /* libGoogleToolboxForMac.a */,
 				CA80BBADAAE168112AE79D70 /* libPods-FHGoogleiOSClient.a */,
 				82579A5842F54CDC188F4A9A /* libPods-FHGoogleiOSClientTests.a */,
 				AD02274A93607A8FA9159C4B /* libPods-FHGoogleiOSClientUITests.a */,
@@ -662,6 +668,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMOAuth2\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"$(SRCROOT)/GTLRService/Source\"/**",
+				);
 				INFOPLIST_FILE = FHGoogleiOSClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClient;
@@ -675,6 +696,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H3MEX3W3VV;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMOAuth2\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"$(SRCROOT)/GTLRService/Source\"/**",
+				);
 				INFOPLIST_FILE = FHGoogleiOSClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MADAO.FHGoogleiOSClient;

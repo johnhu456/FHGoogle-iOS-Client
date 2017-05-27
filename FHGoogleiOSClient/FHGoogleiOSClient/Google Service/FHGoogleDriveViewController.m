@@ -7,16 +7,40 @@
 //
 
 #import "FHGoogleDriveViewController.h"
+#import <GTLRService.h>
+#import <GTLRDrive.h>
+
+#import "FHGoogleLoginManager.h"
 
 @interface FHGoogleDriveViewController ()
 
+@property (nonatomic, strong) GTLRDriveService *service;
 @end
 
 @implementation FHGoogleDriveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.service = [[GTLRDriveService alloc] init];
+    self.service.authorizer = [[[[FHGoogleLoginManager sharedInstance] currentUser] authentication] fetcherAuthorizer];
+    GTLRDriveQuery_FilesList *query = [GTLRDriveQuery_FilesList query];
+    
+    query.fields = @"kind,nextPageToken,files(mimeType,id,kind,name,webViewLink,thumbnailLink,trashed,modifiedTime,size,originalFilename)";
+    [self.service executeQuery:query
+             completionHandler:^(GTLRServiceTicket *callbackTicket,
+                                 GTLRDrive_FileList *fileList,
+                                 NSError *callbackError) {
+                 if (callbackError)
+                 {
+//                     callback(nil,callbackError);
+                 }
+                 else
+                 {
+//                     callback(fileList.files,callbackError);
+                 }
+             }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
